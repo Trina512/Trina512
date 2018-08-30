@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Trina's Website</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header-container">
+			<a href="index.html"><img src="images/logo.png" alt="logo area" class="logo"/></a>
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+				    <li><a href="work.html">Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="javascript:;"  id="contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="popup" id="popup">
+				<p>
+					<span>Tel:</span><br/><br/>
+					(064) 021 041 8898
+				</p>
+				<p>
+					<span>Email:</span><br/><br/>
+					TrinaYang0424@gmail.com
+				</p>
+				<img src="./images/icon-close.png" id="popup-img"/>
+				<div class="imgHoverBg"></div>
+			</div>
+			<script>
+				$( '#contact' )
+				  .click(function() {
+				    $( "#popup" ).show();
+				  });
+				$( '#popup-img')  
+				  .click(function() {
+				     $( '#popup' ).hide();
+				  });
+			</script>
+		</div>
+	</header>
+	
+	<div class="content-container">
+			
+			<div class="text-intro">
+				<p class="first-para"><span>//&nbsp;&nbsp;</span>Hi, there. I'm Trina Yang, a UX/UI designer.</p>
+				<p class="second-para">I make products functional and pretty. <span>&nbsp;//</span></p>
+			</div>
+			
+			<div class="white-block">
+				<div class="white-inner">
+						<div class="work-block">
+							<div class="topBlackBox"></div>
+							<p><a href="work.html" class="text-work"><span>&nbsp;</span>Work</a></p>
+							<div class="bottomBlackbox"></div>
+						</div>
+						<div class="inner-redbox">
+							<p>Websites and Apps</p>
+						</div>
+				</div>
+			</div>
+
+			<div class="red-block">
+				<div class="inner-redBlock">
+					<div class="blackBox">
+						<div class="inner-blackBox"></div>
+						<p class="text-me">Me.</p>
+					</div>
+					<p><a href="about.html" class="text-about">About</a></p>
+				</div>
+			</div>
+
+			<div class="end">&copy; Designed and developed by Trina Yang, 2018.</div>
+	</div>
+
+</body>
+
+</html>

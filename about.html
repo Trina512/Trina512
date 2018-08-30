@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Trina's Website</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<script type="text/javascript" src="./js/jquery.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-container">
+				<a href="index.html"><img src="images/logo.png" alt="logo area" class="logo"/></a>
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					    <li><a href="work.html">Work</a></li>
+						<li><a href="about.html"  class="active">About</a></li>
+						<li><a href="javascript:;"  id="contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="popup" id="popup">
+					<p>
+						<span>Tel:</span><br/><br/>
+						(064) 021 041 8898
+					</p>
+					<p>
+						<span>Email:</span><br/><br/>
+						TrinaYang0424@gmail.com
+					</p>
+					<img src="./images/icon-close.png" id="popup-img"/>
+					<div class="imgHoverBg"></div>
+				</div>
+				<script>
+					$( '#contact' )
+					  .click(function() {
+					    $( "#popup" ).show();
+					  });
+					$( '#popup-img')  
+					  .click(function() {
+					     $( '#popup' ).hide();
+					  });
+				</script>
+			</div>
+		</header>
+		
+		<div class="content-container">
+			<div class="whiteBlock">
+				<div class="left">
+					<div class="left-inner">
+						<div class="blackBlock"></div>
+						<div class="verticalLine"></div>
+						<p>28/06/2018</p>
+						<div class="redBlock"></div>
+					</div>
+				</div>
+				<div class="middle">
+					<div class="inner-middle">
+						<p>About<br/><span>Me</span></p>
+					</div>
+				</div>
+				<div class="right">
+					<div class="inner-right">
+						<img src="./images/img-skyDiving.png" alt="img-skyDiving">
+						<p>
+							Hi, I’m Trina, a UX/UI Designer who enjoys solving problems and creating elegant designs.<br/><br/>
+
+							I believe that the beautiful user interface design can arouse customers interests in using a product, and build their faith in the product. On the other hand, the thoughtful user experience design helps to retain and increase the customers. Therefore, I always put genuine efforts on both sides.<br/><br/>
+
+							One of my goals is to be a full-stack designer, so I study cases from top-notch UX/UI designers, acquire daily design news and inspiration from Medium, Dribble and Instagram, and learn how to code from Youtube and my colleagues.<br/><br/>
+							  
+							Beyond work, I enjoy gourmet, painting, workout and movies. <br/><br/>
+
+							Thanks for stopping by.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="end">&copy; Designed and developed by Trina Yang, 2018.</div>
+		</div>
+	</body>
+
+</html>
